@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cassino Online</h1>
+        <div class="game">
+            <h2>Roleta</h2>
+            <div id="roleta" class="roleta">
+                <span id="numeroSorteado">0</span>
+            </div>
+            <div class="controles">
+                <input type="number" id="aposta" placeholder="Valor da aposta" min="1">
+                <button onclick="jogar()">Jogar</button>
+            </div>
+            <p id="resultado"></p>
+            <p>Saldo: <span id="saldo">1000</span> moedas</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
