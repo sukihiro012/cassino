@@ -4,7 +4,6 @@ let tipoAposta = null;
 let numeroAposta = null;
 
 function fazerAposta(tipo) {
-    tipoAposta = tipo;
     const aposta = parseInt(document.getElementById('aposta').value);
 
     if (isNaN(aposta) || aposta < 1) {
@@ -18,6 +17,7 @@ function fazerAposta(tipo) {
     }
 
     apostaAtual = aposta;
+    tipoAposta = tipo;
 
     if (tipo === 'numero') {
         numeroAposta = parseInt(prompt("Escolha um número entre 1 e 36:"));
