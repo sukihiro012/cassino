@@ -16,7 +16,14 @@
             </div>
             <div class="controles">
                 <input type="number" id="aposta" placeholder="Valor da aposta" min="1">
-                <button onclick="jogar()">Jogar</button>
+                <div class="opcoes-aposta">
+                    <button onclick="fazerAposta('vermelho')">Vermelho</button>
+                    <button onclick="fazerAposta('preto')">Preto</button>
+                    <button onclick="fazerAposta('par')">Par</button>
+                    <button onclick="fazerAposta('impar')">Ímpar</button>
+                    <button onclick="fazerAposta('numero')">Número</button>
+                </div>
+                <button onclick="jogar()">Girar Roleta</button>
             </div>
             <p id="resultado"></p>
             <p>Saldo: <span id="saldo">1000</span> moedas</p>
