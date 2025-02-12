@@ -37,6 +37,7 @@ h1 {
     font-size: 40px;
     color: white;
     border: 5px solid #c0392b;
+    transition: transform 2s ease-out;
 }
 
 .controles {
@@ -49,6 +50,14 @@ input {
     width: 150px;
     border-radius: 5px;
     border: none;
+    margin-bottom: 10px;
+}
+
+.opcoes-aposta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -59,7 +68,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 button:hover {
